@@ -20,5 +20,5 @@
 
 
 ## Enlaces de interés:
-	* Learn Selenium IDE In 7 Days
+* Learn Selenium IDE In 7 Days
 http://software-testing-tutorials-automation.blogspot.com.es/p/learn-selenium-ide.html
