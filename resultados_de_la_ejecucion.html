@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+.failed {color: red; background-color: #ffcccc;}
+.passed {color: green; background-color: #ccffcc;}
+.done {color: #404040; background-color: #ccffcc;}
+.comment {color: #404040; background-color: #d0d0d0;}
+body, table { font-family: Verdana, Arial, sans-serif; font-size: 12pt; }
+table { border-collapse: collapse; border: 1px solid #ccc; }
+th, td { padding-left: 0.3em; padding-right: 0.3em; border: 1px solid #ccc; }
+#suiteSummaryTable thead { font-size: 14pt; font-weight: 800; }
+.test_case thead { font-size: 14pt; font-weight: 400; }
+</style>
+</head>
+<body>
+<table id="suiteSummaryTable" class="selenium">
+<thead><tr class="passed"><td>Test Suite: 0TS_suite_hmis.html</td></tr></thead>
+<tbody>
+<tr><td>Test cases: 2 total / <span class="passed">2</span> passed / <span class="failed">0</span> failed</td></tr>
+<tr><td>Commands: 27 total / <span class="passed">27</span> passed / <span class="failed">0</span> failed / <span class="skipped">0</span> skipped</td></tr>
+</tbody></table><br>
+<table id="suiteTable" class="selenium">
+<thead><tr><td>Index of test cases</td></tr></thead>
+<tbody>
+<tr class="passed"><td><a href="#test0">hmis_ual</a></td></tr>
+<tr class="passed"><td><a href="#test1">examen_hmis</a></td></tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test0"></a><table class="test_case"><thead><tr><td colspan="4">Test case: hmis_ual</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=lst-ib</td>
+	<td>universidad de almeria</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>name=btnG</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Universidad de Almería</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Grados, 1 y 2 Ciclo</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Grado en Ingeniería Informática (Plan 2015)</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Plan de Estudios</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Ordenadas por cursos</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">SIEMPRE debe haber un ASSERT al final del test</td>
+</tr>
+<tr class="passed">
+	<td>assertText</td>
+	<td>//div[@id='articulo']/table[7]/tbody/tr[2]/td[2]/a/strong</td>
+	<td>Herramientas y Métodos de Ingeniería del Software</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test1"></a><table class="test_case"><thead><tr><td colspan="4">Test case: examen_hmis</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=lst-ib</td>
+	<td>universidad de almeria</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>name=btnG</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Universidad de Almería</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Grados, 1 y 2 Ciclo</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Grado en Ingeniería Informática (Plan 2015)</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Horarios, Aulas y Exámenes</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Usamos click en lugar de clickAndWait porque abre una nueva pestaña</td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Si falla ! Ir a Firefox y permitir que se abra la ventana emergente !!!!</td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=calendario de los exámenes</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Esperamos a que se abra la nueva pestaña o ventana</td>
+</tr>
+<tr class="done">
+	<td>waitForPopUp</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Seleccionamos la nueva pestaña o ventana</td>
+</tr>
+<tr class="done">
+	<td>selectPopUp</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Comprobamos que en la columna 3 de la fila que contiene el texto "40153306" aparece el texto Herramientas y Métodos....</td>
+</tr>
+<tr class="passed">
+	<td>assertText</td>
+	<td>//tr[contains(td[2], &quot;40153306&quot;)]/td[3]</td>
+	<td>Herramientas y Métodos de Ingeniería del Software</td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Guardamos valores en variables</td>
+</tr>
+<tr class="done">
+	<td>storeText</td>
+	<td>//tr[contains(td[2], &quot;40153306&quot;)]/td[5]</td>
+	<td>fecha</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>storeText</td>
+	<td>//tr[contains(td[2], &quot;40153306&quot;)]/td[6]</td>
+	<td>hora</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>storeText</td>
+	<td>//tr[contains(td[2], &quot;40153306&quot;)]/td[7]</td>
+	<td>lugar</td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Mostramos un mensaje en el LOG (ver pestaña "Log" de Selenium IDE)</td>
+</tr>
+<tr class="done">
+	<td>echo</td>
+	<td>El examen de HMIS será el ${fecha} a las ${hora} en ${lugar}</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Cerramos la nueva pestaña o ventana</td>
+</tr>
+<tr class="done">
+	<td>close</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Seleccionamos la pestaña o ventana original</td>
+</tr>
+<tr class="done">
+	<td>selectWindow</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTitle</td>
+	<td>Horarios, Aulas y Exámenes - Grado en Ingeniería Informática (Plan 2015) - Universidad de Almería</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+</body></html>

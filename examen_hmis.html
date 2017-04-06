@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.google.es/" />
+<title>examen_hmis</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">examen_hmis</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lst-ib</td>
+	<td>universidad de almeria</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=btnG</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Universidad de Almería</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Grados, 1 y 2 Ciclo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Grado en Ingeniería Informática (Plan 2015)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Horarios, Aulas y Exámenes</td>
+	<td></td>
+</tr>
+<!--Usamos click en lugar de clickAndWait porque abre una nueva pestaña-->
+<!--Si falla ! Ir a Firefox y permitir que se abra la ventana emergente !!!!-->
+<tr>
+	<td>click</td>
+	<td>link=calendario de los exámenes</td>
+	<td></td>
+</tr>
+<!--Esperamos a que se abra la nueva pestaña o ventana-->
+<tr>
+	<td>waitForPopUp</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--Seleccionamos la nueva pestaña o ventana-->
+<tr>
+	<td>selectPopUp</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--Comprobamos que en la columna 3 de la fila que contiene el texto "40153306" aparece el texto Herramientas y Métodos....-->
+<tr>
+	<td>assertText</td>
+	<td>//tr[contains(td[2], &quot;40153306&quot;)]/td[3]</td>
+	<td>Herramientas y Métodos de Ingeniería del Software</td>
+</tr>
+<!--Guardamos valores en variables-->
+<tr>
+	<td>storeText</td>
+	<td>//tr[contains(td[2], &quot;40153306&quot;)]/td[5]</td>
+	<td>fecha</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[contains(td[2], &quot;40153306&quot;)]/td[6]</td>
+	<td>hora</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[contains(td[2], &quot;40153306&quot;)]/td[7]</td>
+	<td>lugar</td>
+</tr>
+<!--Mostramos un mensaje en el LOG (ver pestaña "Log" de Selenium IDE)-->
+<tr>
+	<td>echo</td>
+	<td>El examen de HMIS será el ${fecha} a las ${hora} en ${lugar}</td>
+	<td></td>
+</tr>
+<!--Cerramos la nueva pestaña o ventana-->
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--Seleccionamos la pestaña o ventana original-->
+<tr>
+	<td>selectWindow</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Horarios, Aulas y Exámenes - Grado en Ingeniería Informática (Plan 2015) - Universidad de Almería</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
