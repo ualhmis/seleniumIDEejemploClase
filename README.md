@@ -17,3 +17,8 @@
 5. Lanzar los tests 
 
 6. Si se desea guardar el resultado de la ejecución de los tests en formato html, usar _Archivo_ / _Export Test Suite results..._ (el plugin debe haber sido instalado previamente)
+
+
+# Enlaces de iterés:
+	* Learn Selenium IDE In 7 Days
+http://software-testing-tutorials-automation.blogspot.com.es/p/learn-selenium-ide.html
