@@ -2,16 +2,17 @@
 
 1. Instalar Selenium IDE como plugin de Firefox
 2. Instalar varios plugins de Selenium IDE (descargar aquí: http://www.seleniumhq.org/download/)
-		1. Flow Control 
-		2. Highlight Elements
-		3. Implicit Wait
-		4. Test Results
+
+	* Flow Control 
+	* Highlight Elements
+	* Implicit Wait
+	* Test Results
 
 3. Abrir Selenium IDE en Firefox. 
 	* _Menu_ / _Complementos_ / _Extensiones_ / _Selenium IDE_ debe estar instalado y activado
 	* Hacer clic sobre el icono de Selenium IDE en la barra de Firefox
 	
-4. Cargar la Test Suite 
+4. Cargar la Test Suite: _0TS_suite_hmis.html_
   
 5. Lanzar los tests 
 
