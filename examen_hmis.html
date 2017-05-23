@@ -28,12 +28,22 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Universidad de Almería</td>
+	<td>link=UAL - Universidad de Almería</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.navbar-toggle.collapsed</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Grados, 1 y 2 Ciclo</td>
+	<td>xpath=(//a[contains(text(),'Estudios')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Grados</td>
 	<td></td>
 </tr>
 <tr>
@@ -47,7 +57,7 @@
 	<td></td>
 </tr>
 <!--Usamos click en lugar de clickAndWait porque abre una nueva pestaña-->
-<!--Si falla ! Ir a Firefox y permitir que se abra la ventana emergente !!!!-->
+<!--SI FALLA ! Ir a Firefox y permitir  ventanas emergentes !!!!-->
 <tr>
 	<td>click</td>
 	<td>link=calendario de los exámenes</td>
