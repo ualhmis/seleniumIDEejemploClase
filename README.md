@@ -1,5 +1,5 @@
 # Primer Ejemplo con Selenium IDE 
-
+[![GitHub issues](https://img.shields.io/github/issues/ualhmis/seleniumIDEejemploClase.svg)](https://github.com/ualhmis/seleniumIDEejemploClase/issues)
 1. Instalar Selenium IDE como plugin de Firefox
 2. Instalar varios plugins de Selenium IDE (descargar aquí: http://www.seleniumhq.org/download/)
 
@@ -35,7 +35,7 @@ http://software-testing-tutorials-automation.blogspot.com.es/p/learn-selenium-id
 
 ## Contributing
 
-1. Fork it ( https://github.com/xxxxxx/seleniumIDEejemploClase/fork )
+1. Fork it ( https://github.com/ualhmis/seleniumIDEejemploClase/fork )
 2. Clone your forked repo into your computer (`git clone https://github.com/xxxxxxx/seleniumIDEejemploClase`)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
