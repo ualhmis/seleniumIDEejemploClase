@@ -1,6 +1,6 @@
-# Primer Ejemplo con Selenium IDE 
+# Primer Ejemplo con Selenium IDE (version classic para Firefox 54<)
 [![GitHub issues](https://img.shields.io/github/issues/ualhmis/seleniumIDEejemploClase.svg)](https://github.com/ualhmis/seleniumIDEejemploClase/issues)
-1. Instalar Selenium IDE como plugin de Firefox
+1. Instalar Selenium IDE como plugin de Firefox 54 o versiones anteriores
 2. Instalar varios plugins de Selenium IDE (descargar aquí: http://www.seleniumhq.org/download/)
 
 	* Flow Control 
