@@ -146,8 +146,6 @@
 </tr>
 <tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
 </tr>
-
-
 <tr>
 	<td>assertText</td>
 	<td>//tbody[@id='formulario:examenesList:tb']/tr[${filaHMIS}]/td[3]<datalist><option>//tbody[@id='formulario:examenesList:tb']/tr[${filaHMIS}]/td[3]</option></datalist></td>
@@ -170,7 +168,7 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>El examen de HMIS será el ${fecha} a las ${hora} en ${lugar}<datalist><option>El examen de HMIS será el ${fecha} a las ${hora} en ${lugar}</option></datalist></td>
+	<td>El examen de HMIS será el ${fecha} a las ${hora} en ${lugar}<datalist><option>El examen de HMIS será el ${fecha} a las ${hora} en ${lugar}</option><option>confirm("El examen de HMIS será el ${fecha} a las ${hora} en ${lugar}")</option></datalist></td>
 	<td></td>
 </tr>
 <tr>
@@ -178,10 +176,7 @@
 	<td><datalist><option></option></datalist></td>
 	<td></td>
 </tr>
-<tr>
-	<td>selectWindow</td>
-	<td><datalist><option></option></datalist></td>
-	<td></td>
+<tr><td>selectWindow</td><td>title=Horarios, Aulas y Exámenes - Grado en Ingeniería Informática (Plan 2015) - Universidad de Almería<datalist><option>title=one 1</option><option>win_ser_1</option><option>title=one</option><option>title=one two three</option><option>title=Horarios, Aulas y Exámenes - Grado en Ingeniería Informática (Plan 2015) - Universidad de Almería</option></datalist></td><td></td>
 </tr>
 <tr>
 	<td>assertTitle</td>
@@ -206,7 +201,7 @@
 </tr>
 <tr><td>storeText</td><td>//tbody[@id='formulario:examenesList:tb']/tr[${i}]/td[2]<datalist><option>//tbody[@id='formulario:examenesList:tb']/tr[${i}]/td[2]</option></datalist></td><td>codigoFilaActual</td>
 </tr>
-<tr><td>if</td><td>codigoFilaActual == 40153306<datalist><option>//tbody[@id='formulario:examenesList:tb']/tr[${i}]/td[2] == 40153306</option><option>codigoFilaActual == 40153306</option></datalist></td><td></td>
+<tr><td>if</td><td>codigoFilaActual == 12104301<datalist><option>//tbody[@id='formulario:examenesList:tb']/tr[${i}]/td[2] == 40153306</option><option>codigoFilaActual == 40153306</option><option>codigoFilaActual == 12104301</option></datalist></td><td></td>
 </tr>
 <tr><td>store</td><td>${i}<datalist><option>${i}</option></datalist></td><td>filaHMIS</td>
 </tr>

@@ -4,7 +4,7 @@
 
 2. Abrir Katalon Recorder en Firefox o Chrome. 
 	
-3. Cargar la Test Suite: _0TS_suite_hmis.html_
+3. Cargar la Test Suite: _HmisEnWebUAL.html_
   
 5. Lanzar los tests 
 
