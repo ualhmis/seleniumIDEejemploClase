@@ -1,28 +1,18 @@
 # Primer Ejemplo con Selenium IDE 
 [![GitHub issues](https://img.shields.io/github/issues/ualhmis/seleniumIDEejemploClase.svg)](https://github.com/ualhmis/seleniumIDEejemploClase/issues)
-1. Instalar Selenium IDE como plugin de Firefox
-2. Instalar varios plugins de Selenium IDE (descargar aquí: http://www.seleniumhq.org/download/)
+1. Instalar [Katalon Recorder](https://www.katalon.com/resources-center/blog/katalon-automation-recorder/) como plugin de Firefox o Chorme
 
-	* Flow Control 
-	* Highlight Elements
-	* Implicit Wait
-	* Test Results
-
-3. Abrir Selenium IDE en Firefox. 
-	* _Menu_ / _Complementos_ / _Extensiones_ / _Selenium IDE_ debe estar instalado y activado
-	* Hacer clic sobre el icono de Selenium IDE en la barra de Firefox
+2. Abrir Katalon Recorder en Firefox o Chrome. 
 	
-4. Cargar la Test Suite: _0TS_suite_hmis.html_
+3. Cargar la Test Suite: _0TS_suite_hmis.html_
   
 5. Lanzar los tests 
 
-6. Si se desea guardar el resultado de la ejecución de los tests en formato html, usar _Archivo_ / _Export Test Suite results..._ (el plugin debe haber sido instalado previamente)
-
 
 ## Enlaces de interés:
-* Learn Selenium IDE In 7 Days
-http://software-testing-tutorials-automation.blogspot.com.es/p/learn-selenium-ide.html
-
+* [Katalon Recorder Samples](https://github.com/katalon-studio/katalon-recorder-samples)
+* [Learn Selenium IDE In 7 Days](http://software-testing-tutorials-automation.blogspot.com.es/p/learn-selenium-ide.html)
+* Referencia [Comandos Selenese](http://docs.katalon.com/display/KD/Selenese+%28Selenium+IDE%29+Commands+Reference)
 
 ## Contribuye
 
